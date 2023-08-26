@@ -1,0 +1,24 @@
+{
+  "cars": [
+    { "favicon": "Toyota.ico", "name": "Toyota" },
+    { "favicon": "Honda.ico", "name": "Honda" },
+    { "favicon": "Ford.ico", "name": "Ford" },
+    { "favicon": "Chevrolet.ico", "name": "Chevrolet" },
+    { "favicon": "Nissan.ico", "name": "Nissan" },
+    { "favicon": "BMW.ico", "name": "BMW" },
+    { "favicon": "Mercedes-Benz.ico", "name": "Mercedes-Benz" },
+    { "favicon": "Audi.ico", "name": "Audi" },
+    { "favicon": "Volkswagen.ico", "name": "Volkswagen" },
+    { "favicon": "Hyundai.ico", "name": "Hyundai" },
+    { "favicon": "Kia.ico", "name": "Kia" },
+    { "favicon": "Subaru.ico", "name": "Subaru" },
+    { "favicon": "Volvo.ico", "name": "Volvo" },
+    { "favicon": "Tesla.ico", "name": "Tesla" },
+    { "favicon": "Mazda.ico", "name": "Mazda" },
+    { "favicon": "Lexus.ico", "name": "Lexus" },
+    { "favicon": "Jeep.ico", "name": "Jeep" },
+    { "favicon": "Chrysler.ico", "name": "Chrysler" },
+    { "favicon": "Dodge.ico", "name": "Dodge" },
+    { "favicon": "Land-Rover.ico", "name": "Land Rover" }
+  ]
+}
