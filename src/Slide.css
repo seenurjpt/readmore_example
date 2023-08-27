@@ -1,0 +1,34 @@
+h1 {
+    color: whitesmoke;
+}
+
+.slide_show {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.slides {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.slides img {
+    height: 15rem;
+    width: 30rem;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+/* KEYFRAME  */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

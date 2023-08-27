@@ -1,36 +1,20 @@
-import { useState } from "react";
+import { BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import "./App.css";
+import List from "./List";
 import data from "./cars.json";
+import SlideShow from "./SlideShow";
+import Header from "./Header";
 
 const App = () => {
-  const [readMore, setReadMore] = useState(true);
-
-  const handleRead = () => {
-    if (readMore === true) {
-      setReadMore(false);
-    }
-    if (readMore === false) {
-      setReadMore(true);
-    }
-  };
   return (
-    <div className="container">
-      <h1>[ List ]</h1>
-      <div
-        className={readMore === false ? "list_container22" : "list_container"} >
-        <ul>
-          {data.cars.map((car) => (
-            <li>{car.name}</li>
-          ))}
-        </ul>
-        <p class={readMore === false ? "read-more22" : "read-more"}>
-          <button
-            onClick={() => {handleRead()}}>
-            Read More... ▽
-          </button>
-        </p>
-      </div>
-    </div>
+      <BrowserRouter>
+      <Header/>
+        <Routes>
+          <Route path="list" element={<List data={data}/>} />
+        <Route path="" element={<Navigate to="/home" />} />
+          <Route path="slide" element={<SlideShow />} />
+        </Routes>
+      </BrowserRouter>
   );
 };
 
