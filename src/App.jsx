@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import cars from "./cars.json";
+import data from "./cars.json";
 
 const App = () => {
   const [readMore, setReadMore] = useState(true);
@@ -19,7 +19,7 @@ const App = () => {
       <div
         className={readMore === false ? "list_container22" : "list_container"} >
         <ul>
-          {cars.cars.map((car) => (
+          {data.cars.map((car) => (
             <li>{car.name}</li>
           ))}
         </ul>
